@@ -6,7 +6,7 @@ import { Home } from "./views/home";
 import { Demo } from "./views/demo";
 import { Single } from "./views/single";
 import injectContext from "./store/appContext";
-import Contactform from "./viewsContactform";
+
 
 
 //create your first component
@@ -21,7 +21,7 @@ const Layout = () => {
 				<ScrollToTop>
 					
 					<Routes>
-					<Route path="/addcontact" element={<ContactForm />} />
+					<Route path="/addcontact"  />
 						<Route path="/" element={<Home />} />
 						<Route path="/demo" element={<Demo />} />
 						<Route path="/single/:theid" element={<Single />} />
