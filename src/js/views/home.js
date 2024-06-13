@@ -21,21 +21,24 @@ export const Home = () => {
 	}, [])
 	return (
 		<>
-			<button className="btn btn-info" onClick={() => navigate("/addscontact")}>agregar contacto</button>
+			<div className="d-flex">
+				<button className="btn btn-info ms-auto" onClick={() => navigate("/addContact")}>agregar contacto</button>
+			</div>
+			<div className="w-75 mx-auto">
+				{contacts && contacts.map((element, index) => {
+					return (
+						<Card
+							key={index}
+							name={element.name}
+							address={element.address}
+							phone={element.phone}
+							email={element.email}
 
-			{contacts && contacts.map((element, index) => {
-				return (
-					<Card
-						key={index}
-						name={element.name}
-						address={element.address}
-						phone={element.phone}
-						email={element.email} 
-						
-					/>
+						/>
 
-				)
-			})}
+					)
+				})}
+			</div>
 		</>
 	)
 };
