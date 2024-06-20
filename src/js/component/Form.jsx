@@ -1,10 +1,8 @@
 import React from "react"
-
 const Form = () => {
-
     return (
         <>
-            <div>
+            <div className="container">
                 <h1><strong>Add a new contact</strong></h1>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Full Name</label>
@@ -22,19 +20,9 @@ const Form = () => {
                     <label for="exampleFormControlTextarea1" class="form-label">Address</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
-
                 <button className="btn btn-primary"> Save </button>
             </div >
         </>
     )
-
-
-
-
-
-
-
 }
-
-
 export default Form

@@ -4,7 +4,7 @@ import Form from "../component/Form.jsx";
 const AddContact = () => {
     return (
         <>
-            <h1>Add Contact</h1>
+
             <Form />
         </>
     )

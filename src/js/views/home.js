@@ -24,11 +24,12 @@ export const Home = () => {
 			<div className="d-flex">
 				<button className="btn btn-info ms-auto" onClick={() => navigate("/addContact")}>agregar contacto</button>
 			</div>
-			<div className="w-75 mx-auto">
+			<div className=" ">
 				{contacts && contacts.map((element, index) => {
 					return (
 						<Card
-							key={index}
+							key={index} 
+							id={element.id}
 							name={element.name}
 							address={element.address}
 							phone={element.phone}
